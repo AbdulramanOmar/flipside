@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const cors = require("cors")
 const app = express();
 app.use(bodyParser.json());
-app.use(cors)
+app.use(cors())
 
 // الاتصال بـ MongoDB
 mongoose.connect("mongodb+srv://akar:omer6655@cluster0.yswkyg6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
